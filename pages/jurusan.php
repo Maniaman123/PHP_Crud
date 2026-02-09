@@ -175,6 +175,7 @@
                                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                                     <thead>
                                         <tr>
+                                            <th>No</th>
                                             <th>ID Jurusan</th>
                                             <th>Nama Jurusan</th>
                                             <th>Opsi</th>
@@ -187,6 +188,7 @@
                                     while($d = mysqli_fetch_array($data)){
                                     ?>
                                         <tr>
+                                            <th><?php echo $i++; ?></th>
                                             <th><?php echo $d["id_jurusan"]; ?></th>
                                             <th><?php echo $d["nama_jurusan"]; ?></th>
                                             <th>
